@@ -1,0 +1,53 @@
+.report-actions{display:flex;flex-direction:column;gap:8px;margin-left:auto;flex-shrink:0}
+.report-actions .secondary-button{margin:0}
+.print-button{background:var(--navy);color:white;border:0;border-radius:8px;font-size:11px;font-weight:650;padding:11px 14px;white-space:nowrap}
+.print-button:hover{background:var(--blue)}
+.print-help{font-size:10px;color:var(--muted);text-align:right;margin:10px 0 18px}
+.print-disclaimer{display:none}
+@media screen and (max-width:650px){
+  .report-actions{flex-direction:row;flex-wrap:wrap;margin:8px 0 0;width:100%;gap:8px}
+  .report-actions .print-button{flex:1;padding:12px 10px;font-size:11px}
+  .report-actions .secondary-button{padding:10px;font-size:10px}
+  .print-help{text-align:left;font-size:10px;margin-top:-9px;line-height:1.6}
+}
+@page{size:A4 portrait;margin:10mm}
+@media print{
+  html{scroll-behavior:auto!important}
+  body{background:#fff!important;color:#172d4d;font-size:10pt;line-height:1.25;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body:before,.hero,.lookup,#welcome,.support,footer,.portal-label,.report-actions,.print-help,.student-avatar{display:none!important}
+  *{animation:none!important;transition:none!important;box-shadow:none!important}
+  .header{max-width:none;width:100%;margin:0;padding:0 0 3mm;background:#fff;border-bottom:1mm solid #ffd035;justify-content:flex-start;break-inside:avoid}
+  .brand{gap:3mm}
+  .brand-mark{width:15mm;height:16mm}
+  .brand-mark img{width:15mm;height:15mm;object-fit:contain;mix-blend-mode:normal}
+  .brand small{font-size:7pt;letter-spacing:1pt}
+  .brand strong{font-size:14pt;line-height:1.2}
+  .brand-motto{font-size:7pt}
+  .main-container{max-width:none;width:100%;padding:0;margin:0}
+  #results{max-width:none;width:100%;margin:0;padding:0;outline:0}
+  .student-panel{display:flex;align-items:center;flex-wrap:nowrap;gap:0;margin:3mm 0 2mm;padding:0 0 2mm;border-bottom:1px solid #dce5f1;break-inside:avoid}
+  .student-info{flex:1;min-width:0}
+  .student-info .eyebrow{font-size:6pt;letter-spacing:1pt}
+  .student-info h2{font-size:12pt;line-height:1.2;margin:1mm 0;letter-spacing:0}
+  .student-info p{font-size:8pt;line-height:1.3}
+  .results-heading{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:3mm;margin:2mm 0}
+  .results-heading .eyebrow,.results-heading p{display:none}
+  .results-heading h2{font-size:14pt;line-height:1.2;margin:0;letter-spacing:-.3pt}
+  .period-chip{font-size:7pt;padding:1.5mm 2mm;border-radius:1mm}
+  .legend{gap:3mm;margin:2mm 0;font-size:6.5pt;line-height:1.2}
+  .legend-dot{width:1.4mm;height:1.4mm}
+  .report-book{border:1px solid #dce5f1;border-radius:2mm;overflow:hidden;break-inside:avoid;page-break-inside:avoid}
+  .book-heading{padding:2mm 3mm;font-size:8pt;letter-spacing:.5pt;line-height:1.2;border-bottom-width:.8mm}
+  .book-heading>span:last-child{min-width:18mm;font-size:6.5pt;letter-spacing:.3pt}
+  .report-list{display:flex;flex-direction:column;margin:0;padding:0;gap:0}
+  .grade-row{grid-template-columns:8mm minmax(0,1fr) 18mm;gap:3mm;min-height:12.5mm;padding:1.5mm 3mm;border-left-width:1.1mm;break-inside:avoid;page-break-inside:avoid}
+  .row-icon{width:8mm;height:8mm;font-size:16pt;border-radius:2mm}
+  .row-subject{font-size:9pt;line-height:1.15;margin:0;letter-spacing:0}
+  .row-message{font-size:7.5pt;line-height:1.15;margin-top:1mm}
+  .final-grade{font-size:15pt;line-height:1.05;min-height:9mm;padding:1mm;letter-spacing:-.3pt;border-radius:2mm}
+  .grade-scale{font-size:6pt;margin-top:.5mm;letter-spacing:0}
+  .pending .final-grade{font-size:8pt;line-height:1.2;letter-spacing:0}
+  .book-bottom{font-size:7.5pt;padding:2mm;line-height:1.2}
+  .report-note{font-size:7pt;line-height:1.3;padding:2mm 0;margin:0;break-inside:avoid}
+  .print-disclaimer{display:block;font-size:7pt;line-height:1.3;text-align:center;color:#69788e;border-top:1px solid #e5ebf3;padding-top:2mm;break-inside:avoid}
+}

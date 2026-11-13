@@ -1,0 +1,10 @@
+datos/
+__pycache__/
+.venv/
+*.log
+*.xls
+*.xlsx
+*.pdf
+.env
+.env.*
+secrets/

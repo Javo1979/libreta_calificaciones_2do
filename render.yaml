@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: libreta-calificaciones-2do-pcei
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: waitress-serve --listen=0.0.0.0:$PORT app:app
+    healthCheckPath: /
+    envVars:
+      - key: CALIFICACIONES_PATH
+        value: /etc/secrets/calificaciones.json
+      - key: TRUST_PROXY
+        value: "1"

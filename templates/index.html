@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06285c">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Calificaciones 2.º I | PCEI Tungurahua</title>
+  <link rel="icon" href="/static/sello.png">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/libreta.css">
+  <link rel="stylesheet" href="/static/print.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="/" aria-label="PCEI Tungurahua, inicio">
+      <span class="brand-mark"><img src="/static/sello.png" alt="Sello de la Unidad Educativa"></span>
+      <span><small>UNIDAD EDUCATIVA</small><strong>PCEI TUNGURAHUA</strong><span class="brand-motto">Educación que transforma vidas</span></span>
+    </a>
+    <span class="portal-label"><span class="status-dot"></span> Portal del estudiante</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> TU ESFUERZO CONSTRUYE TU FUTURO</div>
+        <h1 id="hero-title">Cada logro cuenta.<br><span>El siguiente es tuyo.</span></h1>
+        <p>Consulta tus calificaciones y sigue avanzando hacia tus metas.<br class="desktop-break"> Estamos contigo en cada paso de tu aprendizaje.</p>
+        <div class="hero-tags"><span>🎓 2.º de Bachillerato · Paralelo I</span><span>Primera etapa · Ciclo 1</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✦</span>
+        <div class="seal-halo"><img src="/static/sello.png" alt=""></div>
+        <div class="art-caption"><span>✦</span> APRENDER ES SUPERARSE</div>
+      </div>
+    </section>
+
+    <div class="main-container">
+      <section class="lookup" aria-labelledby="lookup-title">
+        <div class="lookup-intro"><span class="section-icon" aria-hidden="true">⌕</span><div><h2 id="lookup-title">Tus calificaciones, a un clic</h2><p>Ingresa tu cédula para consultar tu reporte personal.</p></div></div>
+        <form id="lookup-form" novalidate>
+          <label for="cedula">Número de cédula</label>
+          <div class="form-row"><div class="input-wrap"><span aria-hidden="true">▤</span><input id="cedula" name="cedula" type="text" inputmode="numeric" autocomplete="off" maxlength="10" placeholder="Ingresa tus 10 dígitos" aria-describedby="input-help form-error" required></div><button type="submit" id="search-button">Consultar calificaciones <span aria-hidden="true">→</span></button></div>
+          <p id="input-help" class="input-help">🔒 Tu consulta es personal. No compartas tus datos de identificación.</p>
+          <p id="form-error" class="error" role="alert" hidden></p>
+        </form>
+      </section>
+
+      <section id="results" aria-labelledby="student-name" tabindex="-1" hidden>
+        <div class="student-panel"><div class="student-avatar" aria-hidden="true">🎓</div><div class="student-info"><span class="eyebrow dark">REPORTE PERSONAL · SEGUNDO I</span><h2 id="student-name"></h2><p><span id="student-id"></span><span class="separator">·</span>2.º de Bachillerato «I»</p></div><div class="report-actions"><button type="button" class="print-button" id="print-button" aria-describedby="print-help">🖨️ Imprimir / Guardar PDF</button><button type="button" class="secondary-button" id="clear-button">Nueva consulta ↗</button></div></div>
+        <p class="print-help" id="print-help">Una sola hoja A4. Para descargar, elige «Guardar como PDF» en la ventana de impresión.</p>
+        <div class="results-heading"><div><span class="eyebrow dark">CADA ESFUERZO CUENTA ✦</span><h2>Mi libreta de calificaciones</h2><p>Una materia, un nuevo logro. ¡Sigue adelante!</p></div><span class="period-chip" id="period-label"></span></div>
+        <div class="legend"><span><i class="legend-dot excellent"></i>9–10 · Excelente</span><span><i class="legend-dot good"></i>7–8,99 · Sigue así</span><span><i class="legend-dot improve"></i>Menos de 7 · A mejorar</span><span><i class="legend-dot pending"></i>Sin nota</span></div>
+        <div class="report-book">
+          <div class="book-heading" aria-hidden="true"><span>📒 ASIGNATURA</span><span>PROMEDIO<br>FINAL / 10</span></div>
+          <ol class="report-list" id="grades-grid" aria-label="Promedios finales por asignatura"></ol>
+          <div class="book-bottom"><span aria-hidden="true">🌟</span> ¡Tu próxima meta está un paso más cerca!</div>
+        </div>
+        <p class="report-note">ℹ️ «Sin nota» significa que el archivo no registra un promedio final. No equivale a cero. Si tienes dudas, comunícate con tu docente.</p>
+        <p class="print-disclaimer">Consulta informativa · No reemplaza un certificado oficial de calificaciones.</p>
+      </section>
+
+      <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-top"><span class="tiny-pill">HECHO PARA TI</span><h2 id="welcome-title">Tu aprendizaje, siempre a tu alcance</h2><p>Una forma sencilla de conocer tus resultados y dar el siguiente paso.</p></div>
+        <div class="features"><article><span class="feature-icon blue" aria-hidden="true">📋</span><h3>Claro y directo</h3><p>Solo el promedio final de cada asignatura, sin complicaciones.</p></article><article><span class="feature-icon yellow" aria-hidden="true">🌟</span><h3>Motivación para avanzar</h3><p>Reconocemos tus logros y te animamos a seguir mejorando.</p></article><article><span class="feature-icon cyan" aria-hidden="true">📱</span><h3>Donde tú estés</h3><p>Consulta desde tu celular, tableta o computadora.</p></article></div>
+      </section>
+
+      <aside class="support"><span aria-hidden="true">💬</span><div><strong>¿Necesitas ayuda con tus calificaciones?</strong><p>Tu docente o Secretaría pueden orientarte y revisar cualquier novedad.</p></div><span class="support-location">Ambato · Ecuador</span></aside>
+    </div>
+  </main>
+  <footer><div><strong>PCEI TUNGURAHUA</strong><span>Educación que transforma vidas.</span></div><p>2.º I · Período 2026–2027 · Ciclo 1 · Primera etapa</p><span class="footer-line"></span><small>Consulta informativa · No reemplaza un certificado oficial de calificaciones.</small></footer>
+</body>
+</html>
