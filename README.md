@@ -2,6 +2,10 @@
 
 Unidad Educativa PCEI Tungurahua · 2026–2027 · Ciclo 1 · Primera etapa.
 
+**Portal:** https://libreta-calificaciones-2do-pcei.onrender.com/
+
+**Acceso de GitHub Pages:** https://javo1979.github.io/libreta_calificaciones_2do/
+
 Consulta por cédula, lista colorida de 13 asignaturas, sello institucional, mensajes breves e impresión/guardado en PDF A4 de una sola hoja. Proyecto independiente de la libreta de Primero I.
 
 ## Importación de notas
